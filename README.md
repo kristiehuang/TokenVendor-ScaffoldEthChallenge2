@@ -1,5 +1,13 @@
 # 🏗 scaffold-eth | 🏰 BuidlGuidl
 
+// Forked and cloned just the Challenge 2 branch from [scaffold-eth](https://github.com/scaffold-eth/scaffold-eth/tree/challenge-2-token-vendor):
+  git clone <old-url> --branch <branch-name> --single-branch [<folder>]
+  cd [<folder>]
+  git push https://github.com/accountname/new-repo.git +branch-name:main
+  git remote remove origin
+  git remote add origin <new-repo-url>
+  git checkout -b main
+
 ## 🚩 Challenge 2: Token Vendor
 
 > 🏵 Create `YourToken.sol` smart contract that inherits the **ERC20** token standard from OpenZeppelin. Set your token to `_mint()` **1000** (* 10 ** 18) tokens to the `msg.sender`. Then create a `Vendor.sol` contract that sells your token using a payable `buyTokens()` function.
